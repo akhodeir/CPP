@@ -9,6 +9,8 @@ class Area{
         void set_length(float len);
         void set_width(float w);
         float get_area(void);
+        Area(float l=0 , float w=0);
+        ~Area();
     
 };
 
