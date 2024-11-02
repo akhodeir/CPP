@@ -17,7 +17,10 @@
 				"${fileDirname}/build/${fileBasenameNoExtension}.out"
 			],
 			"options": {
-				"cwd": "${fileDirname}"
+				"cwd": "${fileDirname}",
+				"env": {
+                   "UXT_SILENT_MODE": ""
+               }
 			},
 			"problemMatcher": [
 				"$gcc"
@@ -26,6 +29,10 @@
 				"kind": "build",
 				"isDefault": true
 			},
+			"presentation": {
+               "panel": "dedicated",
+               "clear": true,
+           },
 			"detail": "compiler: /usr/bin/g++"
 		},
 		

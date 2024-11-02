@@ -1,0 +1,50 @@
+
+{
+      
+      "files.associations": {
+            "memory": "c",
+            "variant": "c"
+      },
+      /*
+      
+      "search.excludeFolders": [
+            "path/to/other/folder/to/exclude"
+      ],
+      "search.exclude": {
+            "path/to/folder/not/to/search": true,
+      },
+      "files.exclude": {
+            "*.unt": true,
+            "*.c":false,
+      },
+      "files.watcherExclude": {
+            "path": true,
+      },
+      
+      */
+      /*"C_Cpp.intelliSenseEngine": "disabled",
+      "C_Cpp.intelliSenseEngine": "default",
+      "C_Cpp.default.compileCommands": "${workspaceFolder}/build/compile_commands.json",
+      "C_Cpp.default.intelliSenseMode": "macos-clang-arm64",
+      "C_Cpp.default.cStandard": "c17",
+      "C_Cpp.default.cppStandard": "c++17",
+      "C_Cpp.default.includePath": ["${workspaceFolder}"],
+      
+      "files.exclude": {
+            "/Volumes/": true,
+            "${workspaceFolder}/common" : true,
+            "${workspaceFolder}/nrrc/build": true,
+            "/usr/bin/": true,
+      },*/
+
+      "clangd.arguments": [
+            //"--log=verbose",
+            "--enable-config",
+            "-pretty", 
+            "--background-index", 
+            "--clang-tidy",
+            //"--compile-commands-dir=${workspaceFolder}/"
+            "--compile-commands-dir=${workspaceFolder}/build"
+         ]
+      
+}
